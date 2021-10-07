@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Roboto+Condensed:wght@300;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+
+}
+
+.main{
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    animation: animate .8s;
+}
+
+@keyframes animate{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 16px;
+    border:solid 2px rgba(206, 100, 100, 0.8)
+}
+.card header{
+    text-align: center;
+    padding: 12px;
+    background-color:rgba(206, 100, 100, 0.8);
+    width:100%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header strong{
+    font-size: 2rem;
+    color:#333;
+}
+
+
+@keyframes image-anime{
+    from{filter:grayscale(100%)}
+    to{filter:grayscale(0)}
+}
+
+.card .image{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mov-img{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mov-img img{
+    width:100%;
+}
+
+.image .description{
+    background-color:rgba(146, 0, 0, 0.8); 
+
+}
+
+.about{
+    display:grid;
+    grid-template-rows: auto;
+    margin: 16px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.card .titles{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(206, 100, 100, 0.8);
+    
+}
+
+
+.description-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 8px;
+}
+.card .description{
+    padding: 12px;
+    background-color:rgba(206, 100, 100, 0.8);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.movie-banner-header{
+    text-align: center;
+    background-color:rgba(206, 100, 100, 0.5);
+    padding: 12px;
+    border-radius: 16px 16px 0 0;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.movie-banner img{
+    width:100%;
+    border-radius:0 0 16px 16px;
+}
+
+.paginator{
+    bottom:16px;
+    margin-top: 16px;
+}
+
+.paginator button{
+    background-color:#333;
+    margin:4px;
+    width: 35px;
+    height: 35px;
+    border-radius:50%;
+    border:solid 1px #ce6464;
+    background-color:#fff;
+    cursor:pointer;
+    color: #333;
+    font-weight: 700;
+}
+.button:hover{
+    transition: .3s;
+    background-color:#ce6464;
+    color: #fff
+}
